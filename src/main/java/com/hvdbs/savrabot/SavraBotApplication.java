@@ -13,7 +13,7 @@ public class SavraBotApplication {
 	public static void main(String[] args) throws LoginException {
 		SpringApplication springApplication = new SpringApplication(SavraBotApplication.class);
 
-		JDA jda = JDABuilder.createDefault("token").addEventListeners(new SavraBot()).build();
+		JDA jda = JDABuilder.createDefault("").addEventListeners(new SavraBot()).build();
 
 		springApplication.run(args);
 	}
